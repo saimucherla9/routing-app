@@ -11,13 +11,13 @@ import { NotfoundComponent } from './users/notfound/notfound.component';
 import { SignupComponent } from './users/signup/signup.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   {
     path: 'about',
     component: AboutComponent,
     children: [
-      { path: 'aboutme', component: AboutmeComponent },
-      { path: 'aboutme', component: AboutcompanyComponent },
+      { path: 'about-me', component: AboutmeComponent },
+      { path: 'about-company', component: AboutcompanyComponent },
     ],
   },
   { path: 'contact', component: ContactComponent },

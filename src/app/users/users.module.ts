@@ -23,7 +23,7 @@ import { AboutcompanyComponent } from './aboutcompany/aboutcompany.component';
     AboutmeComponent,
     AboutcompanyComponent
   ],
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   exports: [
     HomeComponent,
     AboutComponent,
