@@ -6,8 +6,8 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/home" routerLinkActive="activatedLink" >Home </a>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" routerLinkActive="activatedLink" >Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/about" routerLinkActive="activatedLink">About</a>
@@ -17,6 +17,13 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/login" routerLinkActive="activatedLink">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/param-link',100,200]" routerLinkActive="activatedLink">Params</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[homeRoute]" routerLinkActive="activatedLink">JumpToLinkDynamic</a>
       </li>
     </ul>
   </div>

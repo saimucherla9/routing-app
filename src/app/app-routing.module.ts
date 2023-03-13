@@ -8,6 +8,7 @@ import { ForgetpasswordComponent } from './users/forgetpassword/forgetpassword.c
 import { HomeComponent } from './users/home/home.component';
 import { LoginComponent } from './users/login/login.component';
 import { NotfoundComponent } from './users/notfound/notfound.component';
+import { ParamsComponent } from './users/params/params.component';
 import { SignupComponent } from './users/signup/signup.component';
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'forgotpassword', component: ForgetpasswordComponent },
+  { path: 'param-link/:userId/:deptId', component: ParamsComponent },
   { path: '**', component: NotfoundComponent },
 ];
 

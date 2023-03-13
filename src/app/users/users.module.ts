@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { AboutcompanyComponent } from './aboutcompany/aboutcompany.component';
+import { ParamsComponent } from './params/params.component';
+import { DynamicLinkComponent } from './dynamic-link/dynamic-link.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AboutcompanyComponent } from './aboutcompany/aboutcompany.component';
     ForgetpasswordComponent,
     NotfoundComponent,
     AboutmeComponent,
-    AboutcompanyComponent
+    AboutcompanyComponent,
+    ParamsComponent,
+    DynamicLinkComponent
   ],
   imports: [CommonModule,RouterModule],
   exports: [
