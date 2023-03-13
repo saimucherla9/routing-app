@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { StaticComponent } from './pratice/static/static.component';
 import { AboutComponent } from './users/about/about.component';
 import { AboutcompanyComponent } from './users/aboutcompany/aboutcompany.component';
 import { AboutmeComponent } from './users/aboutme/aboutme.component';
 import { ContactComponent } from './users/contact/contact.component';
+import { DynamicLinkComponent } from './users/dynamic-link/dynamic-link.component';
 import { ForgetpasswordComponent } from './users/forgetpassword/forgetpassword.component';
 import { HomeComponent } from './users/home/home.component';
 import { LoginComponent } from './users/login/login.component';
@@ -26,6 +28,8 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'forgotpassword', component: ForgetpasswordComponent },
   { path: 'param-link/:userId/:deptId', component: ParamsComponent },
+  { path: 'dynamic-link', component: DynamicLinkComponent },
+  { path: 'static', component: StaticComponent },
   { path: '**', component: NotfoundComponent },
 ];
 

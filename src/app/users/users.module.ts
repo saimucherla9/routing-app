@@ -28,13 +28,6 @@ import { DynamicLinkComponent } from './dynamic-link/dynamic-link.component';
     DynamicLinkComponent
   ],
   imports: [CommonModule,RouterModule],
-  exports: [
-    HomeComponent,
-    AboutComponent,
-    ContactComponent,
-    LoginComponent,
-    SignupComponent,
-    ForgetpasswordComponent
-  ]
+
 })
 export class UsersModule {}

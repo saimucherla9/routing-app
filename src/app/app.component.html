@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +23,15 @@
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/param-link',100,200]" routerLinkActive="activatedLink">Params</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[homeRoute]" routerLinkActive="activatedLink">Jump-To-Link-From-Component</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/dynamic-link']" routerLinkActive="activatedLink">Dynamic-Link</a>
+      </li>
 
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="[homeRoute]" routerLinkActive="activatedLink">JumpToLinkDynamic</a>
+        <a class="nav-link" routerLink="/static" routerLinkActive="activatedLink">Static</a>
       </li>
     </ul>
   </div>
